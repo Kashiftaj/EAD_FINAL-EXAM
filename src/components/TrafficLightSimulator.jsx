@@ -12,7 +12,10 @@ function TrafficLightSimulator() {
 
     useEffect(()=>{
 
-      if(lights["red"]){
+      
+      
+      setInterval(()=>{
+        if(lights["red"]){
         setLights(()=>{
           lights["yellow"]=true
           lights["green"]=false
@@ -24,9 +27,9 @@ function TrafficLightSimulator() {
         lights["red"]=true
           lights["yellow"]=false
       }
-      
-      setInterval(()=>{
-        
+        console.log(lights["red"]);
+        console.log(lights["yellow"]);
+        console.log(lights["green"]);
       },3000)
 
     },[lights])
