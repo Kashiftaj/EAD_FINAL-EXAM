@@ -10,30 +10,30 @@ function TrafficLightSimulator() {
     })
     console.log(lights["yellow"]);
 
-    // useEffect(()=>{
+    useEffect(()=>{
 
       
       
-    //   setInterval(()=>{
-    //     if(lights["red"]){
-    //     setLights(()=>{
-    //       lights["yellow"]=true
-    //       lights["green"]=false
-    //     })
-    //   }else if(lights["yellow"]){
-    //     lights["red"]=false
-    //       lights["green"]=true
-    //   }else{
-    //     lights["red"]=true
-    //       lights["yellow"]=false
-    //   }
-    //     console.log(lights["red"]);
-    //     console.log(lights["yellow"]);
-    //     console.log(lights["green"]);
-    //   },3000)
+      setInterval(()=>{
+        if(lights["red"]){
+        setLights(()=>{
+          lights["yellow"]=true
+          lights["green"]=false
+        })
+      }else if(lights["yellow"]){
+        lights["red"]=false
+          lights["green"]=true
+      }else{
+        lights["red"]=true
+          lights["yellow"]=false
+      }
+        console.log(lights["red"]);
+        console.log(lights["yellow"]);
+        console.log(lights["green"]);
+      },3000)
       
       
-    // },[lights])
+    },[lights])
     
   return (
     <>
