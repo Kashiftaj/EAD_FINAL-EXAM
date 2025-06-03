@@ -1,11 +1,14 @@
 import React from 'react'
+import TrafficLightSimulator from '../src/components/TrafficLightSimulator.jsx'
 
 function App() {
   return (
-    <div>
-      <h1 className='bg-black text-white text-3xl'>hello finals</h1>
-      
-    </div>
+    <>
+    
+      <h1 className='bg-black text-white text-3xl'>Traffic Light Simulator</h1>
+    <TrafficLightSimulator/>
+    
+    </>
   )
 }
 
